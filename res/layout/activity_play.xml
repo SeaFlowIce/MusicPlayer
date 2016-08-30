@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/play_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C6FC0"
+    tools:context="com.example.ex01day01.PlayActivity" >
+
+    <ImageView
+        android:id="@+id/imag_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/selector_play" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imag_play"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_currenttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+       />
+
+    <TextView
+        android:id="@+id/tv_totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_currenttime"
+        android:layout_alignRight="@+id/seekBar1"
+        android:text="00:00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <ImageView
+        android:id="@+id/img_pre"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/imag_play"
+        android:layout_toRightOf="@+id/tv_currenttime"
+        android:src="@drawable/widget_pre_button_default" />
+
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/imag_play"
+        android:layout_toRightOf="@+id/imag_play"
+        android:src="@drawable/widget_next_button_default" />
+
+    <ImageView
+        android:id="@+id/img_modle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/img_pre"
+        android:layout_toLeftOf="@+id/img_pre"
+        android:src="@drawable/ic_player_mode_all_default" />
+
+    <TextView
+        android:id="@+id/tv_play_musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_play_singer"
+        android:layout_below="@+id/tv_play_singer"
+        android:text="酷狗音乐"
+        android:textColor="#F49013"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/selector_back" />
+
+    <TextView
+        android:id="@+id/tv_play_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="酷狗音乐"
+        android:textColor="#F49013"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/img_favor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/btn_favorite_default" />
+
+</RelativeLayout>

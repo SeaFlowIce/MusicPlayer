@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background="@drawable/skin_player_bg1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                     android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tV1"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="我喜欢"
+                        android:textColor="#FCFCFC"
+                        android:drawableTop="@drawable/img_favor_selector"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tV2"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="歌单"
+                        android:textColor="#FCFCFC"
+                        android:drawableTop="@drawable/img_playlist_selector"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tV3"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="下载"
+                        android:textColor="#FCFCFC"
+                        android:drawableTop="@drawable/img_download_selector"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tV4"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="最近"
+                        android:textColor="#FCFCFC"
+                        android:drawableTop="@drawable/img_recent_selector"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </LinearLayout>
+
+               
+                <RelativeLayout
+                    android:id="@+id/Relative1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linear1">
+
+                    <ImageView
+                        android:id="@+id/iV1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/skin_kg_navigation_local_music_normal" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iV1"
+                        android:gravity="center"
+                        android:text="本地音乐"
+                        android:textColor="#FCFCFC"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignTop="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:src="@drawable/a53" />
+                      <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/dzr" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView9"
+                    android:text="0首"
+                    android:textColor="#FCFCFC" />
+                    
+
+                </RelativeLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:background="#FCFCFC">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:drawableTop="@drawable/img_yueku_selector"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="乐库"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:drawableTop="@drawable/img_channel_selector"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="电台"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:drawableTop="@drawable/img_kuchat_selector"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="酷群"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+               
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/textView9"
+                     android:layout_below="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/Relative2"
+                android:layout_below="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="#FCFCFC">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skin_kg_navigation_tool" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:gravity="center"
+                    android:text="音乐工具"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ei3"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBaseline="@+id/textView10"
+                    android:layout_alignBottom="@+id/textView10"
+                    android:layout_toLeftOf="@+id/imageView4"
+                    android:text="听歌识曲" />
+
+            </RelativeLayout>
+             <TextView
+                    android:id="@+id/textView12"
+                     android:layout_below="@+id/Relative2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/Relative3"
+                android:layout_below="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFCFC" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skin_kg_navigation_game" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:gravity="center"
+                    android:text="游戏"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ei3" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBaseline="@+id/textView13"
+                    android:layout_alignBottom="@+id/textView13"
+                    android:layout_toLeftOf="@+id/imageView6"
+                    android:text="3D少女换装手游" />
+
+            </RelativeLayout>
+             <TextView
+                    android:id="@+id/textView15"
+                     android:layout_below="@+id/Relative3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+             <RelativeLayout
+                android:id="@+id/Relative4"
+                android:layout_below="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:background="#FCFCFC">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skin_kg_navigation_hardware" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:gravity="center"
+                    android:text="商城"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ei3" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBaseline="@+id/textView16"
+                    android:layout_alignBottom="@+id/textView16"
+                    android:layout_toLeftOf="@+id/imageView8"
+                    android:text="" />
+                </RelativeLayout>
+                
+                 <TextView
+                    android:id="@+id/textView18"
+                     android:layout_below="@+id/Relative4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+             
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

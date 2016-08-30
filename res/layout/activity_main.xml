@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <!--Tab在上面 -->
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/bg_tabhost_bg">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />            
+    </android.support.v4.app.FragmentTabHost>
+    
+    
+    
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+        
+        
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_main_singer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bpz" />
+
+        <SeekBar
+            android:id="@+id/sb_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_main_singer"
+            android:layout_toRightOf="@+id/img_main_singer" />
+
+        <TextView
+            android:id="@+id/tv_mian_musicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sb_main"
+            android:layout_toRightOf="@+id/img_main_singer"
+            android:text="酷狗音乐"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_main_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/img_main_singer"
+            android:text="传播好音乐"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/img_main_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:layout_alignTop="@+id/img_main_playinglist"
+            android:layout_toLeftOf="@+id/img_main_playinglist"
+            android:src="@drawable/kg_ic_playing_bar_next_default" />
+
+        <ImageView
+            android:id="@+id/img_main_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/img_main_next"
+            android:layout_toLeftOf="@+id/img_main_next"
+            android:src="@drawable/selector_play" />
+        
+       <ImageView
+            android:id="@+id/img_main_playinglist"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sb_main"
+            android:src="@drawable/selector_playing" 
+            android:onClick="playinglist"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

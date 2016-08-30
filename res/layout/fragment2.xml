@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#03A3E4">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/f2_imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/kg_fx" 
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:id="@+id/f2_linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFCFC" >
+
+               <TextView
+                    android:id="@+id/f2_textView1"
+                    android:drawableTop="@drawable/skin_fx_main_header_mv_normal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="MV"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/f2_textView2"
+                    android:drawableTop="@drawable/skin_fx_main_header_live_normal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="繁星直播"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/f2_textView3"
+                    android:drawableTop="@drawable/skin_fx_main_header_kugou_live_normal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="酷狗LIVE"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/f2_textView4"
+                     android:layout_below="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/f2_Relative1"
+                android:layout_below="@+id/f2_textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFCFC" >
+
+                <ImageView
+                    android:id="@+id/f2_imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skin_fx_main_header_kupai_icon" />
+
+                <TextView
+                    android:id="@+id/f2_textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/f2_imageView2"
+                    android:gravity="center"
+                    android:text="繁星MV"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/f2_imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ei3"/>
+
+            </RelativeLayout>
+             <TextView
+                    android:id="@+id/f2_textView6"
+                    android:layout_below="@+id/Relative1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/f2_Relative2"
+                android:layout_below="@+id/f2_textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFCFC" >
+
+                <ImageView
+                    android:id="@+id/f2_imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skin_fx_main_header_xyf_icon" />
+
+                <TextView
+                    android:id="@+id/f2_textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/f2_imageView4"
+                    android:gravity="center"
+                    android:text="明星在线"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/f2_imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ei3" />  
+
+            </RelativeLayout>
+             <TextView
+                    android:id="@+id/f2_textView8"
+                     android:layout_below="@+id/f2_Relative2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+             <RelativeLayout
+                android:id="@+id/f2_Relative3"
+                android:layout_below="@+id/f2_textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFCFC" >
+
+                <ImageView
+                    android:id="@+id/f2_imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/skin_fx_main_header_xianxia_icon" />
+
+                <TextView
+                    android:id="@+id/f2_textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/f2_imageView6"
+                    android:gravity="center"
+                    android:text="线下演出"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/f2_imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ei3" />
+
+                </RelativeLayout>
+                
+                 <TextView
+                    android:id="@+id/f2_textView10"
+                     android:layout_below="@+id/f2_Relative3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:text="Large Text"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+             
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
